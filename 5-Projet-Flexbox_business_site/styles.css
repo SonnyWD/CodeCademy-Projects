@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Roboto";
+}
+nav {
+  box-shadow: -1px 1px 5px black;
+  background-color: #fff;
+  height: 10vh;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  z-index: 1;
+  position: fixed;
+  width: 100%;
+}
+nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+nav ul li a {
+  color: black;
+}
+nav ul li a:hover {
+  color: transparent;
+  -webkit-text-stroke: 1px rgb(32, 67, 163);
+  transition: 0.2s ease;
+}
+#img {
+  width: 100px;
+  height: 10vh;
+}
+.right {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: rgb(46, 46, 46);
+}
+header {
+  background: url("/img/header_tiomothy-swope-zwe--GYIZtc-unsplash.jpg")
+    no-repeat center/cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  width: 60%;
+  font-size: 5rem;
+  color: transparent;
+  -webkit-text-stroke: 2px white;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* ---------------------------------------------------- MAIN -------------------------------------------------- */
+section {
+  text-align: center;
+}
+#services,
+#agence {
+  text-align: center;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 1px rgb(32, 67, 163);
+  font-size: 3rem;
+  letter-spacing: 1px;
+  border-bottom: 2px solid rgb(189, 70, 139);
+  border-top: 2px solid rgb(189, 70, 139);
+  padding: 1rem 0;
+  margin: 5rem auto 2rem;
+  display: inline-block;
+}
+#agence {
+  letter-spacing: 4px;
+}
+.services,
+.agence {
+  display: grid;
+  grid-template: 1fr 1fr / repeat(3, 1fr);
+  justify-content: space-around;
+  margin: 3rem auto;
+  text-align: center;
+}
+.agence {
+  grid-template: 1fr / repeat(3, 1fr);
+}
+.service {
+  width: 70%;
+  margin: 0 auto;
+  filter: grayscale(100%);
+}
+.service h2,
+.employees h3 {
+  margin: 1rem auto 2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.service img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+.service:hover {
+  max-width: 100%;
+  height: auto;
+  filter: none;
+  cursor: pointer;
+}
+.employees {
+  width: 70%;
+  margin: 0 auto;
+}
+.employees img {
+  max-width: 100%;
+  height: 80%;
+  border-radius: 5px;
+  object-fit: cover;
+  margin-bottom: 2rem;
+}
+.deux {
+  background-color: black;
+  color: white;
+}
+footer {
+  display: flex;
+  justify-content: space-around;
+  height: 65px;
+  align-items: start;
+}
