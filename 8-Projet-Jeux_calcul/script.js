@@ -10,10 +10,7 @@ const generateTarget = () => {
 
 // Fonction qui compare le chifre de l'individu, de l'ordinateur et le chiffre secret
 const compareGuesses = (human, computer, target) => {
-  if (human === computer) {
-    return 'Human wins'
-  }
-  if (Math.abs(human - target) < Math.abs(computer - target)) {
+  if (Math.abs(human - target) <= Math.abs(computer - target)) {
     return true;
   } else {
     return false;
